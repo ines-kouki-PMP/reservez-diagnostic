@@ -2159,11 +2159,12 @@ button, a { touch-action: manipulation; -webkit-tap-highlight-color: transparent
   .logo-tagline {
     font-size: 10px;
     letter-spacing: 0.01em;
+    line-height: 1.3;
   }
 }
 @media (max-width: 380px) {
   .logo-tagline {
-    display: none;
+    font-size: 9px;
   }
 }
 
@@ -2514,9 +2515,102 @@ img, svg { max-width: 100%; height: auto; }
   }
 }
 
-/* --- 7. RESPONSIVE NAV : tagline cachée plus tôt sur petit écran --- */
-@media (max-width: 520px) {
-  .logo-tagline { display: none; }
+/* --- 7. RESPONSIVE NAV : tagline visible sur tous écrans, ajustée mobile --- */
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .nav-inner {
+    gap: 12px;
+  }
+  .logo {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 420px) {
+  .logo-tagline {
+    font-size: 9px !important;
+    letter-spacing: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  .logo {
+    font-size: 18px !important;
+  }
+}
+
+/* --- 8. BOUTON CTA "DISCOVERY" — responsive dédié (texte plus long) --- */
+/* Sur la section Appel découverte 45 min, le bouton "Réserver notre premier
+   échange (gratuit)" a besoin d'un traitement responsive spécifique car le
+   texte est plus long et le contexte (centré dans une carte) est différent. */
+.discovery-cta {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 10px !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap;
+  text-align: center;
+  margin-top: 28px !important;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.discovery-cta .cta-badge {
+  flex-shrink: 0;
+}
+
+/* Tablette : taille intermédiaire */
+@media (max-width: 720px) {
+  .discovery-cta {
+    font-size: 14px !important;
+    padding: 14px 24px !important;
+    letter-spacing: 0.05em !important;
+    min-height: 48px !important;
+  }
+  .discovery-cta .cta-badge {
+    font-size: 9px !important;
+    padding: 3px 8px !important;
+    margin-left: 6px !important;
+  }
+}
+
+/* Mobile standard : passe sur 2 lignes (texte / badge) pour rester lisible */
+@media (max-width: 480px) {
+  .discovery-cta {
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    white-space: normal;
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 20px !important;
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+    letter-spacing: 0.06em !important;
+  }
+  .discovery-cta .cta-badge {
+    font-size: 9px !important;
+    padding: 2px 10px !important;
+    margin-left: 0 !important;
+  }
+  .discovery-inner {
+    padding: 32px 20px !important;
+  }
+}
+
+/* Mobile très petit */
+@media (max-width: 360px) {
+  .discovery-cta {
+    font-size: 12px !important;
+    padding: 14px 16px !important;
+    letter-spacing: 0.04em !important;
+  }
 }
 
 </style>
