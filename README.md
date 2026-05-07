@@ -2613,21 +2613,6 @@ img, svg { max-width: 100%; height: auto; }
   }
 }
 
-/* --- 9. GRILLE "VOUS RECONNAISSEZ-VOUS ?" — 3 colonnes × 2 lignes desktop --- */
-.situations-grid {
-  grid-template-columns: repeat(3, 1fr) !important;
-}
-@media (max-width: 900px) {
-  .situations-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-@media (max-width: 600px) {
-  .situations-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
 </style>
 </head>
 
@@ -2655,8 +2640,8 @@ img, svg { max-width: 100%; height: auto; }
       </h1>
 
       <p class="hero-sub fade-up d3">
-        Vous portez des programmes complexes.<br>
-        <strong>Mais votre propre trajectoire reste floue.</strong>
+        Vous avancez <strong>mais vous stagnez.</strong><br>
+        Vous vous adaptez <strong>mais vous ne pilotez pas.</strong>
       </p>
 
       <div class="hero-divider fade-up d3"></div>
@@ -2667,7 +2652,7 @@ img, svg { max-width: 100%; height: auto; }
 
       <div class="hero-cta-group fade-up d4">
         <button class="btn-primary cta-with-badge" onclick="window.open('https://calendly.com/ines-kouki-yb9r/30min','_blank')">
-          Réserver notre premier échange <span class="cta-badge">gratuit</span>
+          « Réserver l'appel découverte gratuit »
         </button>
       </div>
 
@@ -2679,17 +2664,17 @@ img, svg { max-width: 100%; height: auto; }
 <!-- MARQUEE -->
 <div class="marquee-strip">
   <div class="marquee-track">
-    <div class="marquee-item">Clarté de Rôle</div>
-    <div class="marquee-item">Posture Professionnelle</div>
-    <div class="marquee-item">Trajectoire de Carrière</div>
-    <div class="marquee-item">17 Ans en Transformation</div>
+    <div class="marquee-item">Rôle clair</div>
+    <div class="marquee-item">Posture affirmée</div>
+    <div class="marquee-item">Trajectoire pilotée</div>
+    <div class="marquee-item">17 ans en transformation complexe</div>
     <div class="marquee-item">4 Continents</div>
     <div class="marquee-item">SAFe SPC · ICP-ACC</div>
     <div class="marquee-item">Banque · Retail · Sécurité Numérique</div>
-    <div class="marquee-item">Clarté de Rôle</div>
-    <div class="marquee-item">Posture Professionnelle</div>
-    <div class="marquee-item">Trajectoire de Carrière</div>
-    <div class="marquee-item">17 Ans en Transformation</div>
+    <div class="marquee-item">Rôle clair</div>
+    <div class="marquee-item">Posture affirmée</div>
+    <div class="marquee-item">Trajectoire pilotée</div>
+    <div class="marquee-item">17 ans en transformation complexe</div>
     <div class="marquee-item">4 Continents</div>
     <div class="marquee-item">SAFe SPC · ICP-ACC</div>
     <div class="marquee-item">Banque · Retail · Sécurité Numérique</div>
@@ -2701,9 +2686,10 @@ img, svg { max-width: 100%; height: auto; }
   <div class="container">
     <div class="discovery-inner">
       <h2>Appel découverte — 45 minutes</h2>
-      <p>Parlons de votre situation actuelle</p>
-      <p>Une conversation pour clarifier si le Diagnostic R.P.T. est fait pour vous</p>
-      <a href="https://calendly.com/ines-kouki-yb9r/30min" target="_blank" rel="noopener noreferrer" class="btn-primary cta-with-badge discovery-cta">Réserver notre premier échange <span class="cta-badge">gratuit</span></a>
+      <p>Un échange de 45 minutes pour clarifier votre rôle, votre posture et votre trajectoire.</p>
+      <p>Une conversation pour voir si le Diagnostic R.P.T. est fait pour vous.</p>
+      <p>Après cet appel, vous déciderez librement.</p>
+      <a href="https://calendly.com/ines-kouki-yb9r/30min" target="_blank" rel="noopener noreferrer" class="btn-primary discovery-cta">« Réserver l'appel découverte gratuit »</a>
     </div>
   </div>
 </section>
@@ -2758,7 +2744,7 @@ img, svg { max-width: 100%; height: auto; }
 <section class="dimensions">
   <div class="container">
     <div class="dimensions-header">
-      <h2 class="section-title dimensions-main-title">Le cadre de diagnostic</h2>
+      <h2 class="section-title dimensions-main-title">Le cadre du diagnostic</h2>
       <p class="dimensions-subtitle">R.P.T. — Un diagnostic systémique en trois dimensions.<br>Un seul objectif&nbsp;: votre clarté stratégique.</p>
       <p>Les organisations investissent massivement dans les méthodes. Moins dans la clarté des rôles, la posture et les trajectoires des individus qui portent réellement la transformation.</p>
       <p class="lead">« La transformation échoue rarement par manque de méthode.<br>Elle échoue quand les rôles sont flous, les postures fragiles et les trajectoires subies. »</p>
@@ -2826,7 +2812,7 @@ img, svg { max-width: 100%; height: auto; }
 <section class="before-after">
   <div class="container">
     <div class="before-after-header">
-      <h2 class="section-title ba-main-title">Avant Diagnostic <span class="ba-rpt">R.P.T.</span> <span class="ba-arrow">·</span> Après Diagnostic <span class="ba-rpt">R.P.T.</span></h2>
+      <h2 class="section-title ba-main-title">Avant &amp; Après le diagnostic <span class="ba-rpt">R.P.T.</span></h2>
       <p class="ba-subtitle">Vos 5 problèmes — Vos 5 réponses concrètes</p>
     </div>
 
@@ -2839,7 +2825,7 @@ img, svg { max-width: 100%; height: auto; }
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">L'écart exact entre votre expertise actuelle et la demande</span>
+            <span class="key">✓ L'écart exact entre votre expertise actuelle et la demande</span>
             <span>Ce que vous devez lâcher et ce que vous devez ajouter</span>
             <span>Votre valeur réelle dans la nouvelle configuration</span>
           </div>
@@ -2854,7 +2840,7 @@ img, svg { max-width: 100%; height: auto; }
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">Pourquoi vous stagnez alors que vous travaillez bien</span>
+            <span class="key">✓ Pourquoi vous stagnez alors que vous travaillez bien</span>
             <span>Ce qui se joue dans les dynamiques invisibles autour de vous</span>
             <span>Comment vous rendre visible aux bons endroits</span>
           </div>
@@ -2864,13 +2850,13 @@ img, svg { max-width: 100%; height: auto; }
       <div class="ba-row">
         <div class="ba-cell before">
           <div class="ba-label">Avant Diagnostic (R.P.T.)</div>
-          <div class="ba-problem">« L'IA arrive. Je ne sais pas si mon expertise restera pertinente. »</div>
+          <div class="ba-problem">« L'IA arrive. L'anxiété monte. Et si ce que je sais faire n'était plus utile ? »</div>
         </div>
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">Ce qui vous rend indispensable dans la transformation technologique</span>
-            <span>Votre stratégie pour rester pertinente à 18 mois</span>
+            <span class="key">✓ Ce qui fait votre vraie valeur (au-delà des outils)</span>
+            <span>Comment vous restez pertinente, intentionnellement</span>
           </div>
         </div>
       </div>
@@ -2883,7 +2869,7 @@ img, svg { max-width: 100%; height: auto; }
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">Votre trajectoire pilotée (vs. subie)</span>
+            <span class="key">✓ Votre trajectoire pilotée (vs. subie)</span>
             <span>La prochaine étape choisie intentionnellement, pas par défaut</span>
           </div>
         </div>
@@ -2897,7 +2883,7 @@ img, svg { max-width: 100%; height: auto; }
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">Votre contribution rendue visible et défendable</span>
+            <span class="key">✓ Votre contribution rendue visible et défendable</span>
             <span>Comment positionner cette valeur en interne comme en externe</span>
           </div>
         </div>
@@ -2937,10 +2923,6 @@ img, svg { max-width: 100%; height: auto; }
           <div class="about-stat-num">3</div>
           <div class="about-stat-label">Secteurs d'activités · Banque · Retail · Sécurité Numérique</div>
         </div>
-        <div class="about-stat">
-          <div class="about-stat-num">+100</div>
-          <div class="about-stat-label">Professionnels accompagnés</div>
-        </div>
       </div>
     </div>
 
@@ -2957,11 +2939,11 @@ img, svg { max-width: 100%; height: auto; }
       <div class="about-divider-h"></div>
 
       <div class="about-body">
-        <p>J'ai grandi entre cultures et appris à naviguer dans des environnements multiculturels. Mes missions au sein des organisations internationales (<a href="https://www.linkedin.com/company/1912/" target="_blank" rel="noopener" class="about-link"><strong>Philip Morris International</strong></a>, <strong>IDEMIA</strong>, <strong>Société Générale</strong> et <strong>BNP Paribas</strong>) m'ont permis de voir ce que peu voient.</p>
+        <p>J'ai grandi entre cultures et appris à naviguer dans des environnements multiculturels. Mes missions au sein des organisations internationales (<a href="https://www.linkedin.com/company/1912/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Philip Morris International</a>, IDEMIA, Société Générale et BNP Paribas) m'ont permis de voir ce que peu voient.</p>
 
         <p>4 pays. 3 secteurs d'activités. À chaque transition, j'ai dû décoder les règles non écrites&nbsp;: comment m'affirmer, être vue, rester pertinente quand tout autour se reconfigure.</p>
 
-        <p>J'ai commencé par le <strong>marketing</strong>, où j'ai appris à comprendre les personnes, créer de l'adhésion et traduire la complexité en clarté. Ces compétences sont devenues le cœur de mon approche R.P.T&nbsp;:</p>
+        <p>J'ai commencé par le marketing, où j'ai appris à comprendre les personnes, créer de l'adhésion et traduire la complexité en clarté. Ces compétences sont devenues le cœur de mon approche R.P.T&nbsp;:</p>
 
         <dl class="rpt-definitions">
           <div class="rpt-def rpt-def-r">
@@ -3001,11 +2983,11 @@ img, svg { max-width: 100%; height: auto; }
 <!-- BRIDGE MARQUEE — between À propos and Offer -->
 <div class="marquee-strip marquee-bridge">
   <div class="marquee-track">
-    <div class="marquee-item bridge-item">Après notre premier échange (Gratuit, sans engagement)</div>
+    <div class="marquee-item bridge-item">Notre premier échange (sans engagement)</div>
     <div class="marquee-item bridge-item">★</div>
     <div class="marquee-item bridge-item">Vous décidez si vous souhaitez aller plus loin avec le diagnostic complet R.P.T.</div>
     <div class="marquee-item bridge-item">★</div>
-    <div class="marquee-item bridge-item">Après notre premier échange (Gratuit, sans engagement)</div>
+    <div class="marquee-item bridge-item">Notre premier échange (sans engagement)</div>
     <div class="marquee-item bridge-item">★</div>
     <div class="marquee-item bridge-item">Vous décidez si vous souhaitez aller plus loin avec le diagnostic complet R.P.T.</div>
     <div class="marquee-item bridge-item">★</div>
@@ -3039,7 +3021,7 @@ img, svg { max-width: 100%; height: auto; }
   <div class="container">
     <h2>Vous savez que quelque chose doit changer<br>Commençons par un appel découverte</h2>
     <p>45 minutes pour clarifier si vous êtes prête à travailler votre rôle, votre posture et votre trajectoire</p>
-    <a href="https://calendly.com/ines-kouki-yb9r/30min" target="_blank" class="btn-primary cta-with-badge">Réserver notre premier échange <span class="cta-badge">gratuit</span></a>
+    <a href="https://calendly.com/ines-kouki-yb9r/30min" target="_blank" class="btn-primary">« Réserver l'appel découverte gratuit »</a>
   </div>
 </section>
 
