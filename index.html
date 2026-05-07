@@ -13,7 +13,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=EB+Garamond:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
 
 <style>
 :root {
@@ -260,26 +260,32 @@ button, a { touch-action: manipulation; -webkit-tap-highlight-color: transparent
   position: relative;
   overflow: visible !important;
 }
+.cta-with-badge {
+  position: relative !important;
+}
 .cta-with-badge .cta-badge {
+  position: absolute;
+  top: -14px;
+  right: 18px;
   display: inline-block;
   background: var(--cream);
   color: var(--midnight);
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.18em;
+  font-size: 9px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 4px 10px;
-  margin-left: 10px;
+  padding: 3px 10px;
   border-radius: 999px;
-  vertical-align: middle;
-  position: relative;
+  white-space: nowrap;
   animation: cta-badge-float 2.4s ease-in-out infinite;
-  box-shadow: 0 4px 12px rgba(196, 120, 154, 0.35);
+  box-shadow:
+    0 4px 14px rgba(196, 120, 154, 0.40),
+    0 0 0 1.5px rgba(196, 120, 154, 0.25);
 }
 @keyframes cta-badge-float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-4px) rotate(-2deg); }
 }
 @media (prefers-reduced-motion: reduce) {
   .cta-with-badge .cta-badge { animation: none; }
@@ -447,7 +453,7 @@ button, a { touch-action: manipulation; -webkit-tap-highlight-color: transparent
 
 .situations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2px;
   background: rgba(232,223,210,0.06);
 }
@@ -480,11 +486,11 @@ button, a { touch-action: manipulation; -webkit-tap-highlight-color: transparent
   font-size: 48px;
   font-weight: 300;
   line-height: 1;
-  color: rgba(196,120,154,0.2);
+  color: var(--cream);
   margin-bottom: 20px;
   transition: color 0.3s;
 }
-.situation:hover .situation-number { color: rgba(196,120,154,0.5); }
+.situation:hover .situation-number { color: var(--cream); }
 
 .situation h3 {
   font-family: var(--body);
@@ -1052,7 +1058,7 @@ button, a { touch-action: manipulation; -webkit-tap-highlight-color: transparent
 }
 
 @media (max-width: 600px) {
-  .situations-grid { grid-template-columns: 1fr; }
+  .situations-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-cta-group  { flex-direction: column; align-items: center; }
   .nav-tag         { display: none; }
 }
@@ -1150,11 +1156,16 @@ button, a { touch-action: manipulation; -webkit-tap-highlight-color: transparent
   .for-who { padding: 80px 0; }
   .section-title { font-size: clamp(28px, 7vw, 38px); margin-bottom: 40px; }
   .section-eyebrow { font-size: 12px; }
-  .situations-grid { grid-template-columns: 1fr; }
+  .situations-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 500px) {
+  .situations-grid { grid-template-columns: 1fr !important; }
   .situation { padding: 28px 24px; }
   .situation-number { font-size: 40px; margin-bottom: 14px; }
   .situation h3 { font-size: 15px; }
   .situation p { font-size: 15px; }
+
 
   /* Dimensions */
   .dimensions { padding: 80px 0; }
@@ -2613,6 +2624,117 @@ img, svg { max-width: 100%; height: auto; }
   }
 }
 
+
+/* ===== AMPERSANDS STYLISÉS ===== */
+.ba-ampersand,
+.about-ampersand,
+.logo-amp {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--terracotta);
+  font-size: 0.9em;
+  letter-spacing: 0;
+  display: inline-block;
+  margin: 0 3px;
+  line-height: 1;
+  vertical-align: baseline;
+}
+.ba-ampersand {
+  font-size: 0.9em;
+}
+.logo-amp {
+  font-size: 0.85em;
+  margin: 0 2px;
+}
+
+/* ===== PHOTO INÈS — RESPONSIVE RENFORCÉ ===== */
+/* Sur mobile: la photo prend toute la largeur disponible,
+   cadrage tête bien visible (object-position haut) */
+@media (max-width: 768px) {
+  .about-photo-inner {
+    width: min(560px, 96vw) !important;
+    height: min(560px, 96vw) !important;
+    margin: 0 auto !important;
+    border-radius: 4px !important;
+    overflow: hidden;
+    box-shadow:
+      0 24px 48px rgba(0,0,0,0.4),
+      0 0 0 6px rgba(28,16,48,0.5),
+      0 0 0 7px rgba(196,120,154,0.18) !important;
+  }
+  .about-photo-inner img {
+    object-fit: cover !important;
+    object-position: center 15% !important;
+    width: 100% !important;
+    height: 100% !important;
+    filter: saturate(1.05) contrast(1.05) brightness(1.02) !important;
+  }
+  .about-photo-inner::after {
+    background: linear-gradient(
+      180deg,
+      rgba(28,16,48,0) 0%,
+      rgba(28,16,48,0) 55%,
+      rgba(28,16,48,0.4) 100%
+    ) !important;
+  }
+  .about-photo-col {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    height: auto !important;
+  }
+  .about-photo-title,
+  .about-stats {
+    width: min(560px, 96vw) !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-photo-inner {
+    width: 96vw !important;
+    height: 96vw !important;
+  }
+  .about-photo-title,
+  .about-stats {
+    width: 96vw !important;
+  }
+  .about-photo-name {
+    font-size: 20px !important;
+  }
+  .about-rpt-letters {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-photo-inner {
+    width: 94vw !important;
+    height: 94vw !important;
+  }
+  .about-photo-title,
+  .about-stats {
+    width: 94vw !important;
+  }
+}
+
+/* ===== BADGE CTA RESPONSIVE ===== */
+/* S'assure que le bouton a assez de padding en haut pour que le badge ne soit pas coupé */
+.btn-primary.cta-with-badge {
+  padding-top: 18px !important;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  .cta-with-badge .cta-badge {
+    right: 12px !important;
+    font-size: 8px !important;
+    top: -12px !important;
+    padding: 3px 8px !important;
+  }
+}
+
 </style>
 </head>
 
@@ -2623,7 +2745,7 @@ img, svg { max-width: 100%; height: auto; }
   <div class="nav-inner">
     <div class="logo-block">
       <div class="logo">Inès <span>Kouki</span></div>
-      <div class="logo-tagline">Experte en Rôle, Posture &amp; Trajectoire</div>
+      <div class="logo-tagline">Experte en Rôle, Posture et Trajectoire</div>
     </div>
     <div class="nav-tag">R.P.T. · Rôle · Posture · Trajectoire</div>
   </div>
@@ -2652,7 +2774,7 @@ img, svg { max-width: 100%; height: auto; }
 
       <div class="hero-cta-group fade-up d4">
         <button class="btn-primary cta-with-badge" onclick="window.open('https://calendly.com/ines-kouki-yb9r/30min','_blank')">
-          « Réserver l'appel découverte gratuit »
+          Réserver notre premier échange <span class="cta-badge">Gratuit</span>
         </button>
       </div>
 
@@ -2812,7 +2934,7 @@ img, svg { max-width: 100%; height: auto; }
 <section class="before-after">
   <div class="container">
     <div class="before-after-header">
-      <h2 class="section-title ba-main-title">Avant &amp; Après le diagnostic <span class="ba-rpt">R.P.T.</span></h2>
+      <h2 class="section-title ba-main-title">Avant et Après le diagnostic <span class="ba-rpt">R.P.T.</span></h2>
       <p class="ba-subtitle">Vos 5 problèmes — Vos 5 réponses concrètes</p>
     </div>
 
@@ -2967,7 +3089,7 @@ img, svg { max-width: 100%; height: auto; }
 
       <!-- Certifications -->
       <div class="about-certs">
-        <div class="about-cert-title"><span class="about-name-rose">Inès Kouki</span> — Experte en Rôle, Posture &amp; Trajectoire</div>
+        <div class="about-cert-title"><span class="about-name-rose">Inès Kouki</span> — Experte en Rôle, Posture et Trajectoire</div>
         <span class="about-cert-label">Certifiée</span>
         <div class="about-cert-badges">
           <span class="about-cert">SAFe SPC®</span>
@@ -3021,7 +3143,7 @@ img, svg { max-width: 100%; height: auto; }
   <div class="container">
     <h2>Vous savez que quelque chose doit changer<br>Commençons par un appel découverte</h2>
     <p>45 minutes pour clarifier si vous êtes prête à travailler votre rôle, votre posture et votre trajectoire</p>
-    <a href="https://calendly.com/ines-kouki-yb9r/30min" target="_blank" class="btn-primary">« Réserver l'appel découverte gratuit »</a>
+    <a href="https://calendly.com/ines-kouki-yb9r/30min" target="_blank" class="btn-primary cta-with-badge">Réserver notre premier échange <span class="cta-badge">Gratuit</span></a>
   </div>
 </section>
 
