@@ -2947,7 +2947,7 @@ img, svg { max-width: 100%; height: auto; }
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">✓ L'écart exact entre votre expertise actuelle et la demande</span>
+            <span class="key">L'écart exact entre votre expertise actuelle et la demande</span>
             <span>Ce que vous devez lâcher et ce que vous devez ajouter</span>
             <span>Votre valeur réelle dans la nouvelle configuration</span>
           </div>
@@ -2962,7 +2962,7 @@ img, svg { max-width: 100%; height: auto; }
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">✓ Pourquoi vous stagnez alors que vous travaillez bien</span>
+            <span class="key">Pourquoi vous stagnez alors que vous travaillez bien</span>
             <span>Ce qui se joue dans les dynamiques invisibles autour de vous</span>
             <span>Comment vous rendre visible aux bons endroits</span>
           </div>
@@ -2977,7 +2977,7 @@ img, svg { max-width: 100%; height: auto; }
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">✓ Ce qui fait votre vraie valeur (au-delà des outils)</span>
+            <span class="key">Ce qui fait votre vraie valeur (au-delà des outils)</span>
             <span>Comment vous restez pertinente, intentionnellement</span>
           </div>
         </div>
@@ -2991,7 +2991,7 @@ img, svg { max-width: 100%; height: auto; }
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">✓ Votre trajectoire pilotée (vs. subie)</span>
+            <span class="key">Votre trajectoire pilotée (vs. subie)</span>
             <span>La prochaine étape choisie intentionnellement, pas par défaut</span>
           </div>
         </div>
@@ -3005,7 +3005,7 @@ img, svg { max-width: 100%; height: auto; }
         <div class="ba-cell after">
           <div class="ba-label">Après Diagnostic (R.P.T.)</div>
           <div class="ba-solution">
-            <span class="key">✓ Votre contribution rendue visible et défendable</span>
+            <span class="key">Votre contribution rendue visible et défendable</span>
             <span>Comment positionner cette valeur en interne comme en externe</span>
           </div>
         </div>
@@ -3029,7 +3029,7 @@ img, svg { max-width: 100%; height: auto; }
           <span class="about-photo-title-prefix">Experte en</span>
           <span class="about-rpt-letters">
             <span class="rpt-r">Rôle</span><span class="rpt-sep">,</span>
-            <span class="rpt-p">Posture</span><span class="rpt-sep">&amp;</span>
+            <span class="rpt-p">Posture</span><span class="rpt-sep">et</span>
             <span class="rpt-t">Trajectoire</span>
           </span>
         </div>
