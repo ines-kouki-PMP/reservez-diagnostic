@@ -2689,7 +2689,7 @@ img, svg { max-width: 100%; height: auto; }
       <p>Un échange de 45 minutes pour clarifier votre rôle, votre posture et votre trajectoire.</p>
       <p>Une conversation pour voir si le Diagnostic R.P.T. est fait pour vous.</p>
       <p>Après cet appel, vous déciderez librement.</p>
-      <a href="https://calendly.com/ines-kouki-yb9r/30min" target="_blank" rel="noopener noreferrer" class="btn-primary discovery-cta">« Réserver l'appel découverte gratuit »</a>
+
     </div>
   </div>
 </section>
