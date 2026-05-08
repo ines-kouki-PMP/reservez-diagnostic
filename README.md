@@ -2819,7 +2819,7 @@ img, svg { max-width: 100%; height: auto; }
 <!-- FOR WHO -->
 <section class="for-who">
   <div class="container">
-    <h2 class="section-title for-who-main-title">Vous reconnaissez-vous ?</h2>
+    <h2 class="section-title for-who-main-title">Vous vous reconnaissez ?</h2>
     <p class="for-who-subtitle">Une (ou plusieurs) de ces situations vous ressemblent ?</p>
 
     <div class="situations-grid">
@@ -2867,7 +2867,7 @@ img, svg { max-width: 100%; height: auto; }
   <div class="container">
     <div class="dimensions-header">
       <h2 class="section-title dimensions-main-title">Le cadre du diagnostic</h2>
-      <p class="dimensions-subtitle">R.P.T. — Un diagnostic systémique en trois dimensions.<br>Un seul objectif&nbsp;: votre clarté stratégique.</p>
+      <p class="dimensions-subtitle">R.P.T. un diagnostic systémique en trois dimensions.<br>Un seul objectif&nbsp;: votre clarté stratégique.</p>
       <p>Les organisations investissent massivement dans les méthodes. Moins dans la clarté des rôles, la posture et les trajectoires des individus qui portent réellement la transformation.</p>
       <p class="lead">« La transformation échoue rarement par manque de méthode.<br>Elle échoue quand les rôles sont flous, les postures fragiles et les trajectoires subies. »</p>
     </div>
